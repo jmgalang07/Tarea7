@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Stations</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Gas Station Filter</h1>
+    </header>
+    <main>
+        <section class="filters">
+            <h2>Filters</h2>
+            <form id="filterForm">
+                <label for="province">Province:</label>
+                <select id="province" name="province" required>
+                    <option value="">Select a province</option>
+                </select>
+
+                <label for="municipality">Municipality:</label>
+                <select id="municipality" name="municipality" disabled>
+                    <option value="">Select a municipality</option>
+                </select>
+
+                <label for="fuelType">Fuel Type:</label>
+                <select id="fuelType" name="fuelType" disabled>
+                    <option value="">Select a fuel type</option>
+                </select>
+
+                <label for="openNow">
+                    <input type="checkbox" id="openNow" name="openNow">
+                    Only open now
+                </label>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Results</h2>
+            <ul id="stationList">
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
